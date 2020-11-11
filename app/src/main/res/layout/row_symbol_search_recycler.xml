@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ripple_row_symbol_search">
+
+    <TextView
+        android:id="@+id/text_fragment_symbol_search_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Company Name"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/text_fragment_symbol_search_company_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_symbol_search_company_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Company Symbol"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/text_fragment_symbol_search_company_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_symbol_search_company_symbol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Company Region"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        />
+
+    <View
+        android:id="@+id/view_1_fragment_symbol_search"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_symbol_search_company_region"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

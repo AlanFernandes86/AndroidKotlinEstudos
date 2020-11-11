@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Analize</string>
+    <string name="title_search_symbol">Pesquisar Empresa</string>
+    <string name="button_search">Consultar</string>
+    <string name="hint_edit_symbol_search">Nome da empresa</string>
+    <string name="button_save_API">Salvar chave de acesso (APIKEY)</string>
+    <string name="hint_button_save_APIKEY">DIgite a APIKEY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_digite_apikey">Digite sua chave de acesso (APIKEY)</string>
+    <string name="message_digite_empresa">Digite o nome da empresa para começar</string>
+    <string name="title_activity_teste">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_activity_quote_details">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

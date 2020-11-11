@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_margin="2dp"
+    android:background="@android:color/background_light"
+    >
+
+    <TextView
+        android:id="@+id/text_row_dashboard_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="COMPANY_NAME"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/text_row_dashboard_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="PRICE"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/image_row_dashboard_data"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_company_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_access_time"
+        android:textColor="@android:color/secondary_text_light"
+        />
+
+    <TextView
+        android:id="@+id/text_row_dashboard_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_company_name"
+        app:layout_constraintStart_toEndOf="@id/image_row_dashboard_data"
+        android:text="DATA"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:id="@+id/view_1_row_dashboard"
+        android:layout_width="1dp"
+        android:layout_height="12sp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_company_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_row_dashboard_data"
+        app:layout_constraintEnd_toStartOf="@id/text_row_dashboard_symbol"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:id="@+id/text_row_dashboard_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_company_name"
+        app:layout_constraintStart_toEndOf="@id/view_1_row_dashboard"
+        android:text="SYMBOL"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/text_row_dashboard_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_price"
+        app:layout_constraintEnd_toStartOf="@id/text_row_dashboard_change_percent"
+        android:text="0,00"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:id="@+id/text_row_dashboard_change_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_row_dashboard_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(0,00%)"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

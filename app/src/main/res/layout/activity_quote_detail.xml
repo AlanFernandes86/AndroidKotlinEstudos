@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quotedetails.QuoteDetailActivity">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:background="#E6E6E6"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="7 dias"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="30 dias"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="06 meses"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="01 ano"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="05 anos"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        app:layout_constraintEnd_toEndOf="@+id/title_quotedetail_high"
+        app:layout_constraintStart_toStartOf="@+id/title_quotedetail_high"
+        app:layout_constraintTop_toTopOf="@+id/text_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="00,00"
+        app:layout_constraintEnd_toEndOf="@+id/title_quotedetail_open"
+        app:layout_constraintStart_toStartOf="@+id/title_quotedetail_open"
+        app:layout_constraintTop_toBottomOf="@+id/title_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        app:layout_constraintEnd_toEndOf="@+id/title_quotedetail_close"
+        app:layout_constraintStart_toStartOf="@+id/title_quotedetail_close"
+        app:layout_constraintTop_toTopOf="@+id/text_quotedetail_open"
+        tools:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        app:layout_constraintEnd_toEndOf="@+id/title_quotedetail_low"
+        app:layout_constraintStart_toStartOf="@+id/title_quotedetail_low"
+        app:layout_constraintTop_toTopOf="@+id/text_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_lastrefreshed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Last Refreshed:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_quotedetail_lastdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="29/09/1986 12:00"
+        app:layout_constraintStart_toEndOf="@+id/text_quotedetail_lastrefreshed"
+        app:layout_constraintTop_toTopOf="@+id/text_quotedetail_lastrefreshed" />
+
+    <TextView
+        android:id="@+id/title_quotedetail_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="open"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quotedetail_lastrefreshed" />
+
+    <TextView
+        android:id="@+id/title_quotedetail_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/title_quotedetail_low"
+        app:layout_constraintStart_toEndOf="@+id/title_quotedetail_open"
+        app:layout_constraintTop_toTopOf="@+id/title_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/title_quotedetail_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/title_quotedetail_close"
+        app:layout_constraintStart_toEndOf="@+id/title_quotedetail_high"
+        app:layout_constraintTop_toTopOf="@+id/title_quotedetail_open" />
+
+    <TextView
+        android:id="@+id/title_quotedetail_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_quotedetail_low"
+        app:layout_constraintTop_toTopOf="@+id/title_quotedetail_open"
+        tools:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
